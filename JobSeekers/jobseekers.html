@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jobseekers.css">
+</head>
+<body>
+        <nav>
+            <h2 class="logo">HireZX</h2>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="jobs">Jobs</a></li>
+            </ul>
+            <ul>
+                <button type="button" class="login-btn"><a href="#" id="login">Login</a></button>
+            </ul>
+        </nav>
+        <script type="text/javascript">
+            document.getElementById("home").onclick = function () {
+                location.href = "../index.html";}
+             document.getElementById("login").onclick = function () {
+                location.href = "../Login/login.html";}
+             document.getElementById("register").onclick = function () {
+                location.href = "../Login/register.html";}
+             document.getElementById("jobs").onclick = function () {
+                location.href = "../Jobseekers/jobseekers.html";}
+        </script>
+    <div class="job-bg">
+        <h2 class="text">Find global & mulitlingual talent</h2>
+        <p class="text-para">HireEz hepls companies build and scale worldwide</p>
+            <div class="search-container">
+                <!-- <label for="country">Country</label>               -->
+                <select id="location" name="country" class="form-control">
+                    <option>Hiring Location</option>
+                    <option value="AP">Andhra Pradesh</option>
+        <option value="AR">Arunachal Pradesh</option>
+        <option value="AS">Assam</option>
+        <option value="BR">Bihar</option>
+        <option value="CT">Chhattisgarh</option>
+        <option value="GA">Gujarat</option>
+        <option value="HR">Haryana</option>
+        <option value="HP">Himachal Pradesh</option>
+        <option value="JK">Jammu and Kashmir</option>
+        <option value="GA">Goa</option>
+        <option value="JH">Jharkhand</option>
+        <option value="KA">Karnataka</option>
+        <option value="KL">Kerala</option>
+        <option value="MP">Madhya Pradesh</option>
+        <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+        <option value="MZ">Mizoram</option>
+        <option value="NL">Nagaland</option>
+        <option value="OR">Odisha</option>
+        <option value="PB">Punjab</option>
+        <option value="RJ">Rajasthan</option>
+        <option value="SK">Sikkim</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="TG">Telangana</option>
+        <option value="TR">Tripura</option>
+        <option value="UT">Uttarakhand</option>
+        <option value="UP">Uttar Pradesh</option>
+        <option value="WB">West Bengal</option>
+        <option value="AN">Andaman and Nicobar Islands</option>
+        <option value="CH">Chandigarh</option>
+        <option value="DN">Dadra and Nagar Haveli</option>
+        <option value="DD">Daman and Diu</option>
+        <option value="DL">Delhi</option>
+        <option value="LD">Lakshadweep</option>
+        <option value="PY">Puducherry</option>
+                </select>
+                <input type="text" placeholder="Candidate Skillset" id="candidate"/>
+                <button class="start-hiring-btn" type="button" id="submit">Start Hiring</button>
+                <script type="text/javascript">
+                    document.getElementById("submit").onclick = function () {
+                        const location=(document.getElementById("location").value)
+                        const candidate=(document.getElementById("candidate").value)
+                        const details = {
+                                location, candidate
+                        }
+                        console.log(details)
+                    }
+                </script>
+            </div> 
+        
+    </div>
+
+</body>
+</html>

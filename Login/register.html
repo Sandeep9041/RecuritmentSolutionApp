@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div style="display:flex;flex-direction: column;">
+        <nav>
+          <h2 class="logo">HireZX</h2>
+          <ul>
+              <li><a href="#" id="home">Home</a></li>
+              <li><a href="#" id="jobs">Jobs</a></li>
+          </ul>
+          <ul>
+              <button type="button" class="login-btn"><a href="#" id="login">Login</a></button>
+          </ul>
+      </nav>
+      <div class="body">
+      <div class="login-containers">
+        <h1 class="login-heading">Register</h1>
+        <div id="login-form">
+          <form id="login">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="num" placeholder="Phone Number" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+          <button type="submit" class="login-button" id="register">Register</button>
+          <script type="text/javascript">
+            document.getElementById("home").onclick = function () {
+                location.href = "../index.html";}
+             document.getElementById("login").onclick = function () {
+                location.href = "../Login/login.html";}
+             document.getElementById("register").onclick = function () {
+                location.href = "../Login/register.html";}
+             document.getElementById("jobs").onclick = function () {
+                location.href = "../JobSeekers/jobseekers.html";}
+        </script>
+          </form>
+          <div id="register-message"></div>
+
+        </div>
+      
+        <script>
+          document.getElementById("register").onclick= function(event) {
+            event.preventDefault();
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var name = document.getElementById("name").value;
+            var num = document.getElementById("num").value;
+             if (username !== "" && password !== "" && name !== "" && num !=="") {
+              document.getElementById("register-message").textContent = "Registered successful!";
+              document.getElementById("register-message").className = "message"
+            } else {
+              document.getElementById("register-message").innerHTML = "Please fill all fields";
+              document.getElementById("register-message").className = "error"
+            }
+          };
+        </script>
+      </div>
+      </div>
+      </div>
+      </body>
+</body>
+</html>

@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+}
+.job-bg{
+background-color:#000000;
+min-height: 100vh;
+color: #ffffff;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-inline:15px;
+    padding-block:7px;
+    color:#ffffff;
+    background-color :#000000;
+}
+.logo{
+    background: -webkit-linear-gradient( rgb(141, 200, 14),rgb(23, 172, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cute Font', cursive;
+    font-size:17px;
+}
+.logo-span{
+    font-size:15px;
+}
+ul{
+    display:flex;
+}
+li{
+    list-style:none;
+    margin-right:37px;
+    text-decoration: none;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight:600;
+    font-size:16px;
+    opacity:2;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+.login-btn{
+    border:1px solid #ffffff;
+   width:115px;
+   height:39px;
+    border-radius:5px;
+    background-color: transparent;
+    color:#ffffff;
+    font-size:17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 55px;
+}
+.text-para{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    opacity:0.7;
+    font-size:11px;
+    margin-top:15px;
+}
+.form-control{
+    padding:11px;
+}
+.search-container {
+    display: flex;
+    background-color: #ffffff;
+    border:1 solid gray;
+    width: max-content;
+    height: 55px;
+    margin-inline: auto;
+    margin-top:55px;
+    border-radius:7px;
+}
+label{
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+select{
+    border: 0px;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+    width:255px;
+    margin-right:15px;
+    outline: none;
+}
+input{
+    border: 0px;
+    outline: none;
+    width:225px;
+}
+.start-hiring-btn{
+background-color:rgb(23, 172, 232,70%);
+border:0px;
+outline: none;
+padding-inline:15px;
+font-weight: 700;
+font-family: Arial, sans-serif;
+border-top-right-radius:7px;
+border-bottom-right-radius:7px;
+cursor: pointer;
+}
